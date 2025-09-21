@@ -1,0 +1,45 @@
+### Health Check
+GET http://localhost:5000/health
+
+###
+
+### Get all customers
+GET http://localhost:5000/customers
+
+###
+
+### Add a new customer
+POST http://localhost:5000/customers
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+
+###
+
+### Add another customer
+POST http://localhost:5000/customers
+Content-Type: application/json
+
+{
+  "name": "Jane Smith",
+  "email": "jane.smith@example.com"
+}
+
+###
+
+### Update a customer (replace :id with actual id, e.g., 1)
+PUT http://localhost:5000/customers/:id
+Content-Type: application/json
+
+{
+  "name": "Jane Smith Updated",
+  "email": "jane.updated@example.com"
+}
+
+###
+
+### Delete a customer (replace :id with actual id, e.g., 1)
+DELETE http://localhost:5000/customers/:id

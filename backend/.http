@@ -1,0 +1,46 @@
+# -------------------------------
+# GET all customers and save last ID
+# -------------------------------
+GET http://localhost:5000/customers
+Content-Type: application/json
+
+> {% 
+    const data = JSON.parse(responseBody);
+    if (data.length > 0) {
+        client.global.set("LATEST_ID", data[data.length - 1].id);
+    }
+%}
+
+###
+
+# -------------------------------
+# POST a new customer
+# -------------------------------
+POST http://localhost:5000/customers
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+
+###
+
+# -------------------------------
+# PUT (update) the latest customer
+# -------------------------------
+PUT http://localhost:5000/customers/{{LATEST_ID}}
+Content-Type: application/json
+
+{
+  "name": "John Updated",
+  "email": "john.updated@example.com"
+}
+
+###
+
+# -------------------------------
+# DELETE the latest customer
+# -------------------------------
+DELETE http://localhost:5000/customers/{{LATEST_ID}}
+Content-Type: application/json

@@ -1,0 +1,18 @@
+POST http://localhost:5000/customers
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+### Create a new customer
+POST http://localhost:5000/customers
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+
+### Get all customers
+GET http://localhost:5000/customers

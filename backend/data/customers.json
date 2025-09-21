@@ -1,0 +1,58 @@
+[
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "paid": false,
+    "notes": "Trial account",
+    "history": []
+  },
+  {
+    "id": 3,
+    "name": "Charlie Davis",
+    "email": "charlie@example.com",
+    "paid": true,
+    "notes": "VIP customer",
+    "history": []
+  },
+  {
+    "id": 4,
+    "name": "Diana Perez",
+    "email": "diana@example.com",
+    "paid": true,
+    "notes": "Follow up next week",
+    "history": []
+  },
+  {
+    "id": 5,
+    "name": "Ethan Lee",
+    "email": "ethan@example.com",
+    "paid": true,
+    "notes": "Quarterly billing cycle",
+    "history": []
+  },
+  {
+    "id": 6,
+    "name": "cafikgas ",
+    "email": "c91@gmail.com",
+    "paid": false,
+    "notes": "",
+    "history": []
+  },
+  {
+    "id": 7,
+    "name": "Cameron",
+    "email": "cm.redmond91@gmail.com",
+    "paid": false,
+    "notes": "",
+    "history": []
+  },
+  {
+    "id": 8,
+    "name": "Cameron",
+    "email": "cm.r@gmail.com",
+    "paid": false,
+    "notes": "",
+    "history": []
+  }
+]
